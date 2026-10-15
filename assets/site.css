@@ -1835,3 +1835,128 @@ body:has(.hero) .site-header {
     margin-left: auto;
   }
 }
+
+/* SCHefferz: switch header to a white bar after scrolling (desktop + mobile) */
+.site-header {
+  transition: background-color 0.28s ease, color 0.28s ease,
+    box-shadow 0.28s ease;
+}
+.site-header.scrolled {
+  background: #fff !important;
+  color: #11110f !important;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.09);
+}
+.site-header.scrolled .nav a,
+.site-header.scrolled .find-store,
+.site-header.scrolled .account-link,
+.site-header.scrolled .cart-link,
+.site-header.scrolled .menu-toggle,
+.site-header.scrolled .header-right,
+.site-header.scrolled .brand {
+  color: #11110f !important;
+}
+.site-header.scrolled .nav a:hover,
+.site-header.scrolled .nav a.active {
+  color: #007e6b !important;
+}
+.site-header.scrolled .brand img {
+  filter: brightness(0);
+}
+.site-header.scrolled .account-link svg,
+.site-header.scrolled .cart-link svg {
+  stroke: #11110f !important;
+}
+.site-header.scrolled .menu-toggle {
+  border-color: #11110f;
+}
+.site-header.scrolled .cart-link .bag-count {
+  color: #fff !important;
+  background: #11110f !important;
+}
+.site-header.scrolled .nav {
+  background: #fff !important;
+}
+.site-header.scrolled .nav a {
+  color: #11110f !important;
+}
+.site-header.scrolled .nav a:hover,
+.site-header.scrolled .nav a.active {
+  color: #007e6b !important;
+}
+@media (max-width: 720px) {
+  .site-header.scrolled .nav {
+    background: #fff !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  .site-header.scrolled .menu-toggle {
+    background: transparent !important;
+  }
+}
+
+/* SCHefferz scroll header: works with both header markup versions */
+.site-header {
+  transition: background 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
+}
+body:has(.hero) .site-header.scrolled {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100%;
+  margin: 0 !important;
+  background: #fff !important;
+  color: #11110f !important;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
+.site-header.scrolled {
+  background: #fff !important;
+  color: #11110f !important;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+}
+.site-header.scrolled .nav,
+.site-header.scrolled .nav.open {
+  background: #fff !important;
+}
+.site-header.scrolled .nav a,
+.site-header.scrolled .find-store,
+.site-header.scrolled .account-link,
+.site-header.scrolled .cart-link,
+.site-header.scrolled .bag,
+.site-header.scrolled .menu-toggle,
+.site-header.scrolled .header-right {
+  color: #11110f !important;
+}
+.site-header.scrolled .brand img {
+  filter: brightness(0) !important;
+}
+.site-header.scrolled .account-link svg,
+.site-header.scrolled .cart-link svg {
+  stroke: #11110f !important;
+}
+.site-header.scrolled .bag {
+  border-color: #11110f !important;
+}
+.site-header.scrolled .bag-count {
+  color: #fff !important;
+  background: #11110f !important;
+}
+.site-header.scrolled .menu-toggle {
+  color: #11110f !important;
+  border-color: #11110f !important;
+  background: transparent !important;
+}
+.site-header.scrolled .nav a:hover,
+.site-header.scrolled .nav a.active {
+  color: #007e6b !important;
+}
+@media (max-width: 720px) {
+  body:has(.hero) .site-header.scrolled {
+    top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  .site-header.scrolled .nav {
+    top: 67px;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+  }
+}
