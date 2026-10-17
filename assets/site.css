@@ -617,7 +617,7 @@ h3 {
 }
 .page-hero {
   padding: 78px 5.5vw 65px;
-  background: var(--yellow);
+  background: #fffbee;
 }
 .page-hero.blue {
   background: var(--blue);
