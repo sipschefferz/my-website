@@ -280,7 +280,7 @@ h3 {
   padding-left: 48px;
 }
 .blue {
-  background: var(--blue);
+  /* background: var(--blue); */
 }
 .yellow {
   background: var(--yellow);
@@ -617,7 +617,7 @@ h3 {
 }
 .page-hero {
   padding: 78px 5.5vw 65px;
-  background: var(--yellow);
+  background: #e9e9e9;
 }
 .page-hero.blue {
   background: var(--blue);
