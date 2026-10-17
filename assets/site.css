@@ -987,6 +987,8 @@ h3 {
   }
   .section {
     padding: 46px 5vw;
+    /* padding-left: 5vw; */
+    /* padding-right: 0; */
   }
   .section-head {
     align-items: flex-start;
@@ -1020,7 +1022,7 @@ h3 {
     min-height: 400px;
   }
   .collage-side {
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
     grid-template-rows: 1fr;
   }
   .collage-side figure {
@@ -1744,7 +1746,7 @@ body:has(.hero) .site-header {
     padding: 40px 0 34px;
   }
   .collection-intro {
-    padding: 0 5vw;
+    padding: 0 0vw;
     margin-bottom: 18px;
   }
   .collection-intro h2,
@@ -1769,7 +1771,9 @@ body:has(.hero) .site-header {
   .carousel-shell,
   .shop-carousel {
     margin: 0;
-    padding: 0 5vw;
+    /* padding: 0 5vw; */
+    padding-left: 5vw;
+    padding-right: 0;
   }
   .swipe-track,
   .shop-grid {
@@ -1831,6 +1835,8 @@ body:has(.hero) .site-header {
   .merch-grid {
     grid-auto-columns: 78%;
     gap: 12px;
+    padding-left: 5vw;
+    padding-right: 0;
   }
   body:has(.hero) .site-header {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0));
